@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Montserrat:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Exo 2", sans-serif;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --green: #6bc38b;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+header {
+  height: 10rem;
+  background-color: var(--black);
+}
+
+.header {
+  max-width: 114rem;
+  height: 10rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 10rem;
+}
+
+.logoimg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.logoimg span {
+  color: #6bc38b;
+}
+
+.menu {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul a {
+  color: var(--green);
+  text-transform: uppercase;
+  font-weight: 600;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-bottom: 5px solid var(--black);
+  font-size: 1.6rem;
+}
+
+.menu li a:hover {
+  border-bottom: 5px solid var(--green);
+}
+
+.banner {
+  height: calc(100vh - 10rem);
+  background-color: #333;
+}
+
+.banner .banner-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100%;
+}
