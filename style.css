@@ -13,6 +13,8 @@
   --black: #000;
   --white: #fff;
   --green: #6bc38b;
+  --bg: #374047;
+  --btn-primary: #595959;
 }
 
 html {
@@ -86,11 +88,98 @@ header {
 
 .banner {
   height: calc(100vh - 10rem);
-  background-color: #333;
+  background-color: var(--bg);
 }
 
 .banner .banner-content {
-  background-color: rgba(0, 0, 0, 0.7);
   width: 100vw;
   height: 100%;
+}
+
+.banner .banner-area {
+  display: flex;
+  flex-direction: column;
+  /*  height: 100%; */
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner .banner-area h1 {
+  font-size: 6rem;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.banner .banner-area h2 {
+  color: var(--white);
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.banner .banner-area h2 span {
+  color: var(--green);
+}
+
+.banner .banner-area h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--white);
+}
+
+.banner .banner-area h3 span {
+  color: var(--green);
+}
+
+.banner .banner-area .container-icons {
+  display: flex;
+  gap: 3rem;
+}
+
+.banner .banner-area .container-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.banner .container-icons {
+  margin-bottom: 2rem;
+}
+
+.banner .container-icons img:hover {
+  background-color: var(--green);
+}
+
+.banner .container-buttons .btn-primary {
+  background-color: var(--btn-primary);
+  color: var(--white);
+  border: none;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.banner .container-buttons .btn-secondary {
+  background-color: var(--green);
+  color: var(--white);
+  border: none;
+  padding: 2rem 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.banner .container-buttons .btn-primary:hover {
+  background-color: var(--white);
+  color: var(--green);
+}
+
+.banner .container-buttons .btn-secondary:hover {
+  background-color: var(--white);
+  color: var(--green);
 }
