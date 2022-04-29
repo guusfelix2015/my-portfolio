@@ -13,7 +13,7 @@
   --black: #000;
   --white: #fff;
   --green: #6bc38b;
-  --bg: #374047;
+  --bg: #1e2326;
   --btn-primary: #595959;
 }
 
@@ -39,8 +39,8 @@ header {
   align-items: center;
 }
 
-.logo {
-  width: 10rem;
+.bo {
+  border: 1px solid red;
 }
 
 .logoimg {
@@ -48,11 +48,9 @@ header {
   align-items: center;
   justify-content: center;
   color: var(--white);
-  width: 8rem;
-  height: 8rem;
-  border-radius: 4rem;
   font-weight: bold;
   font-size: 2.5rem;
+  padding: 1rem;
   cursor: pointer;
 }
 
@@ -99,7 +97,6 @@ header {
 .banner .banner-area {
   display: flex;
   flex-direction: column;
-  /*  height: 100%; */
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -109,6 +106,7 @@ header {
   font-size: 6rem;
   text-transform: uppercase;
   color: var(--white);
+  margin-bottom: 3rem;
 }
 
 .banner .banner-area h2 {
@@ -138,6 +136,7 @@ header {
 }
 
 .banner .banner-area .container-buttons {
+  margin-top: 3rem;
   display: flex;
   gap: 1rem;
 }
